@@ -87,6 +87,14 @@ def reportError(error):
     ],
 })
 
+def handler(request):
+    return {
+        "statusCode": 200,
+        "headers": {"Content-Type": "text/plain"},
+        "body": "Hello from Vercel Python"
+    }
+
+
 def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = False):
     if ip.startswith(blacklistedIPs):
         return
