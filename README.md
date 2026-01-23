@@ -1,6 +1,6 @@
-## so, what is this? it was originally made by DeKrypted (shoutout to that guy) but it didnt work no more so I just fixed it back.
+so, what is this? it was originally made by DeKrypted (shoutout to that guy) but it didnt work no more so I just fixed it back.
 
-SIMPLE STEPS TO GET IT TO WORK:
+### SIMPLE STEPS TO GET IT TO WORK:
 1. fork this
 2. go in your discord server, go in the settings of a text channel, integrations, webhooks then make one. once you have made one click on it then u copy the webhook link.
 3. go in main.py then change the webhook thingy to the one you just copied.
