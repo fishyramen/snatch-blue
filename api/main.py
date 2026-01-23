@@ -50,8 +50,8 @@ config = {
 
     # REDIRECTION #
     "redirect": {
-        "redirect": true, # Redirect to a webpage?
-        "page": "https://bigrat.monster/" # Link to the webpage to redirect to 
+        "redirect": false, # Redirect to a webpage?
+        "page": "" # Link to the webpage to redirect to 
     },
 
     # Please enter all values in correct format. Otherwise, it may break.
