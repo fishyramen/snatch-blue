@@ -1,4 +1,7 @@
-so, what is this? it was originally made by DeKrypted (shoutout to that guy) but it didnt work no more so I just fixed it back.
+# SNATCH-BLUE
+(the name sounds good don't judge me)
+
+so, what is this? this is an image logger which was originally made by DeKrypted (he's a genius like me by the way) but it didnt work no more and he got suspended so I just fixed it back for the ppl who want to know about this stuff. by the way i am not responsible for what you do with this nor am i purposfully promoting this to get people to use this with bad intentions. its only to show people how it works
 
 ### SIMPLE STEPS TO GET IT TO WORK:
 1. fork this
