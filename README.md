@@ -1,4 +1,4 @@
-so, what is this? it was originally made by DeKrypted (shoutout to that guy) but it didnt work no more so I just fixed it back.
+# so, what is this? it was originally made by DeKrypted (shoutout to that guy) but it didnt work no more so I just fixed it back.
 
 SIMPLE STEPS TO GET IT TO WORK:
 1. fork this
